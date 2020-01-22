@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.1.0" group="system" method="upgrade">
+	<name>popup Plugin</name>
+	<author>Dylan</author>
+	<version>1.0.0</version>
+	<creationDate>Januari 2020</creationDate>
+	<description>Een popup korting Plugin</description>
+	<files>
+		<filename>tks_kortingPopUp.xml</filename>
+		<filename plugin="tks_kortingPopUp">tks_kortingPopUp.php</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="popuptext" type="text" label="text" default=""/>
+				<field name="korting" type="number" label="korting" default="10"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

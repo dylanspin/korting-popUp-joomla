@@ -1,0 +1,47 @@
+
+.popUpOverlay_Korting{
+	position: fixed;
+	display: none;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(55,55,55,0.8);
+}
+.popUp_Korting{
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	width: 60%;
+	height: 60%;
+	background: white;
+}
+.innerPopup_Korting{
+	padding:4%;
+}
+.popUpKop_Korting{
+	position: relative;
+	width: 100%;
+	top: -100px;
+	left: 0;
+	font-size: 40px;
+	text-align:center;
+	font-weight: 600;
+}
+
+@media (max-width: 599px) {
+
+}
+@media (min-width: 600px) {
+
+}
+@media (min-width: 900px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 1800px) {
+
+}
