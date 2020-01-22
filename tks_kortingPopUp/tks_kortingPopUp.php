@@ -27,8 +27,7 @@
                               <div class='popUpKop_Korting'>50% korting</div>
                             </div>
                         </div>
-                    </div>
-                    ";
+                    </div>";
 
       	    return $cont;
 
@@ -36,15 +35,14 @@
 
         public function onAfterDispatch(){
 
-            $plugin = JPluginHelper::getPlugin('system', 'tks_popUp');
+            $plugin = JPluginHelper::getPlugin('system', 'tks_kortingPopUp');
             $pluginParams = new JRegistry($plugin->params);
 
-            $plgURL = JURI::base() . 'plugins/system/tks_popUp';
+            $plgURL = JURI::base() . 'plugins/system/tks_kortingPopUp';
             $doc = JFactory::getDocument();
 
             $doc->addStyleSheet($plgURL . '/css/style.css');
-            if(!isset($_COOKIE['popUp'])){
-                $doc->addScript($plgURL.'/js/advertisement.js');//bait script voor de adblocker
+            if(!isset($_COOKIE['popUpKorting'])){
                 $doc->addScript($plgURL.'/js/javascript.js');
             }
 
@@ -60,11 +58,12 @@
             $content = $this->createCon($pluginParams);
             $body = str_replace('</body>', $content . '</body>', $body );
 
-            if($this->app->isSite()){
-                if(!isset($_COOKIE['popUp'])){
+            // if($this->app->isSite()){
+                if(!isset($_COOKIE['popUpKorting'])){
                     $this->app->setBody($body);
                 }
-            }
+            // }
+            echo "test";
 
         }
 

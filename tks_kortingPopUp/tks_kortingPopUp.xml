@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" version="3.1.0" group="system" method="upgrade">
-	<name>popup Plugin</name>
+	<name>korting popup Plugin</name>
 	<author>Dylan</author>
 	<version>1.0.0</version>
 	<creationDate>Januari 2020</creationDate>
